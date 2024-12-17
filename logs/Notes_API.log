@@ -1,0 +1,271 @@
+2024-12-17 11:36:23,183 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:23,194 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: Check the log out user account
+2024-12-17 11:36:23,195 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:23,220 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - For generate auth token endpoint is stored in session data 
+2024-12-17 11:36:25,979 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:25,990 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/login
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@733f1395
+2024-12-17 11:36:25,990 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:25,991 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The request details are sent to genearate the token
+2024-12-17 11:36:26,336 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The success response is received for token generation request
+2024-12-17 11:36:26,337 [main] INFO  com.notes.stepdefinition.UserDeleteStepDefinition - The logout endpoint is stored in the session data 
+2024-12-17 11:36:27,107 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:27,110 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = DELETE
+ Request URI = https://practice.expandtesting.com/notes/api/users/logout
+ Request Header = x-auth-token=28aca606e758419a98671bbf4609a1b98463c7ed340c4593b498eb81a844a4f6
+Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@1214d23c
+2024-12-17 11:36:27,110 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:27,111 [main] INFO  com.notes.stepdefinition.UserDeleteStepDefinition - Logout request sends
+2024-12-17 11:36:27,114 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The API request is successfully executed for login endpoint
+2024-12-17 11:36:27,129 [main] INFO  com.notes.stepdefinition.UserDeleteStepDefinition - The user is logout
+2024-12-17 11:36:27,132 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:27,133 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: Check the log out user account --> PASSED
+2024-12-17 11:36:27,133 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:27,164 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:27,164 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: Test the login API with valid credentials
+2024-12-17 11:36:27,164 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:27,164 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The login endpoint is stored in sessionData 
+2024-12-17 11:36:28,049 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:28,050 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/login
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@8851ec
+2024-12-17 11:36:28,051 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:28,051 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The login request is sent
+2024-12-17 11:36:28,052 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The API request is successfully executed for login endpoint
+2024-12-17 11:36:28,061 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - the token is generated
+2024-12-17 11:36:28,071 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The token value is store in the session datae27f441b009b4b968fcf27d4af0319d91f5da66ca8804b47bcc8c9a697fd2c11
+2024-12-17 11:36:28,071 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:28,071 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: Test the login API with valid credentials --> PASSED
+2024-12-17 11:36:28,071 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:28,079 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:28,079 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: Test the login API with invalid credentials
+2024-12-17 11:36:28,079 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:28,080 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The login endpoint is stored in sessionData 
+2024-12-17 11:36:28,787 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:28,789 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/login
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 401
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@17354708
+2024-12-17 11:36:28,790 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:28,791 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The invalid details are sent to login endpoint
+2024-12-17 11:36:28,810 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The expected error response is received in invalid login details
+2024-12-17 11:36:28,810 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:28,811 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: Test the login API with invalid credentials --> PASSED
+2024-12-17 11:36:28,811 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:28,821 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:28,821 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: Test the login API with invalid credentials
+2024-12-17 11:36:28,821 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:28,822 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The login endpoint is stored in sessionData 
+2024-12-17 11:36:29,466 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:29,468 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/login
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 401
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@13c90c06
+2024-12-17 11:36:29,469 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:29,470 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The invalid details are sent to login endpoint
+2024-12-17 11:36:29,489 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The expected error response is received in invalid login details
+2024-12-17 11:36:29,490 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:29,490 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: Test the login API with invalid credentials --> PASSED
+2024-12-17 11:36:29,490 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:29,504 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:29,504 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: To create the user account with valid details
+2024-12-17 11:36:29,504 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:29,505 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The register endpoint is stored in session data 
+2024-12-17 11:36:30,180 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:30,181 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/register
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 409
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@6c830ebd
+2024-12-17 11:36:30,181 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:30,181 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The register request is send with valid details
+2024-12-17 11:36:30,465 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The API request is successfully executed for registration endpoint
+2024-12-17 11:36:30,489 [main] INFO  com.notes.utils.MyTestListener - java.lang.AssertionError: user id is not null
+2024-12-17 11:36:30,489 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:30,489 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: To create the user account with valid details --> FAILED
+2024-12-17 11:36:30,489 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:30,498 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:30,498 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: To create the user account with invalid details
+2024-12-17 11:36:30,498 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:30,499 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The register endpoint is stored in session data 
+2024-12-17 11:36:31,144 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:31,147 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/register
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 400
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@5a583720
+2024-12-17 11:36:31,147 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:31,148 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - User send the request with invalid detais for registration
+2024-12-17 11:36:31,150 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The expected error response is received for invalid register details is received
+2024-12-17 11:36:31,151 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:31,151 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: To create the user account with invalid details --> PASSED
+2024-12-17 11:36:31,152 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:31,162 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:31,163 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: To create the user account with invalid details
+2024-12-17 11:36:31,163 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:31,164 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The register endpoint is stored in session data 
+2024-12-17 11:36:31,951 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:31,951 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/register
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 400
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@5bf523e3
+2024-12-17 11:36:31,952 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:31,952 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - User send the request with invalid detais for registration
+2024-12-17 11:36:31,953 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The expected error response is received for invalid register details is received
+2024-12-17 11:36:31,954 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:31,954 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: To create the user account with invalid details --> PASSED
+2024-12-17 11:36:31,954 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:31,962 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:31,963 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: To create the user account with invalid details
+2024-12-17 11:36:31,963 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:31,964 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The register endpoint is stored in session data 
+2024-12-17 11:36:32,581 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:32,582 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/register
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 400
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@42cfd794
+2024-12-17 11:36:32,582 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:32,582 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - User send the request with invalid detais for registration
+2024-12-17 11:36:32,583 [main] INFO  com.notes.stepdefinition.UserRegistrationStepDefinition - The expected error response is received for invalid register details is received
+2024-12-17 11:36:32,583 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:32,584 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: To create the user account with invalid details --> PASSED
+2024-12-17 11:36:32,584 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:32,595 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:32,596 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: update the user profile information
+2024-12-17 11:36:32,596 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:32,597 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - For generate auth token endpoint is stored in session data 
+2024-12-17 11:36:33,325 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:33,325 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/login
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@160546b1
+2024-12-17 11:36:33,326 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:33,326 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The request details are sent to genearate the token
+2024-12-17 11:36:33,346 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The success response is received for token generation request
+2024-12-17 11:36:33,347 [main] INFO  com.notes.stepdefinition.UpdateProfileStepDefinition - The update endpoint is inserted in sessiondata
+2024-12-17 11:36:33,946 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:33,947 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = PATCH
+ Request URI = https://practice.expandtesting.com/notes/api/users/profile
+ Request Header = x-auth-token=e27f441b009b4b968fcf27d4af0319d91f5da66ca8804b47bcc8c9a697fd2c11
+Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@1b465fa9
+2024-12-17 11:36:33,947 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:33,954 [main] INFO  com.notes.stepdefinition.UpdateProfileStepDefinition - The update information is deserialized successfully 
+2024-12-17 11:36:33,954 [main] INFO  com.notes.stepdefinition.UserLoginStepDefinition - The API request is successfully executed for login endpoint
+2024-12-17 11:36:33,979 [main] INFO  com.notes.stepdefinition.UpdateProfileStepDefinition - The updated information is validated
+2024-12-17 11:36:33,980 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:33,980 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: update the user profile information --> PASSED
+2024-12-17 11:36:33,980 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:33,988 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:33,988 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: To update a user profile information using JSON data
+2024-12-17 11:36:33,988 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:33,989 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - For generate auth token endpoint is stored in session data 
+2024-12-17 11:36:34,596 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:34,597 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/login
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@56f84c9b
+2024-12-17 11:36:34,597 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:34,597 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The request details are sent to genearate the token
+2024-12-17 11:36:34,614 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The success response is received for token generation request
+2024-12-17 11:36:34,615 [main] INFO  com.notes.stepdefinition.UpdateProfileStepDefinition - The update endpoint is inserted in sessiondata
+2024-12-17 11:36:35,155 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:35,156 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = PATCH
+ Request URI = https://practice.expandtesting.com/notes/api/users/profile
+ Request Header = x-auth-token=e27f441b009b4b968fcf27d4af0319d91f5da66ca8804b47bcc8c9a697fd2c11
+Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 400
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@14993306
+2024-12-17 11:36:35,156 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:35,159 [main] INFO  com.notes.stepdefinition.UpdateProfileStepDefinition - The json file data is updated in request
+2024-12-17 11:36:35,162 [main] INFO  com.notes.utils.MyTestListener - java.lang.AssertionError: expected:<200> but was:<400>
+2024-12-17 11:36:35,162 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:35,162 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: To update a user profile information using JSON data --> FAILED
+2024-12-17 11:36:35,162 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:35,174 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:35,174 [main] INFO  com.notes.stepdefinition.Hooks - Scenario: Test the view user details API with valid authorization
+2024-12-17 11:36:35,174 [main] INFO  com.notes.stepdefinition.Hooks - *******************************************************************************************
+2024-12-17 11:36:35,175 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - For generate auth token endpoint is stored in session data 
+2024-12-17 11:36:35,865 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:35,866 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = POST
+ Request URI = https://practice.expandtesting.com/notes/api/users/login
+ Request Header = Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@614d7fbf
+2024-12-17 11:36:35,866 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:35,867 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The request details are sent to genearate the token
+2024-12-17 11:36:35,886 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The success response is received for token generation request
+2024-12-17 11:36:35,887 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The view profile details enpoint is stored in sessiondata
+2024-12-17 11:36:36,425 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:36,426 [main] INFO  com.notes.utils.RestAssuredRequestFilter -  Request Method = GET
+ Request URI = https://practice.expandtesting.com/notes/api/users/profile
+ Request Header = x-auth-token=e27f441b009b4b968fcf27d4af0319d91f5da66ca8804b47bcc8c9a697fd2c11
+Accept=*/*
+Content-Type=application/x-www-form-urlencoded;charset=utf-8
+ Request Body = null
+ Response Status = 200
+ Response Header Accept = null
+ Response Body = io.restassured.internal.RestAssuredResponseImpl@7c5ac0
+2024-12-17 11:36:36,426 [main] INFO  com.notes.utils.RestAssuredRequestFilter - -------------------------------------------------------------------------
+2024-12-17 11:36:36,426 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The view profile request is sent
+2024-12-17 11:36:36,430 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - The success response for view profile request is received
+2024-12-17 11:36:36,452 [main] INFO  com.notes.stepdefinition.ViewProfileStepDefinition - User profile data retrieved succussfully
+2024-12-17 11:36:36,453 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
+2024-12-17 11:36:36,453 [main] INFO  com.notes.utils.MyTestListener - 	Scenario: Test the view user details API with valid authorization --> PASSED
+2024-12-17 11:36:36,453 [main] INFO  com.notes.utils.MyTestListener - *****************************************************************************************
